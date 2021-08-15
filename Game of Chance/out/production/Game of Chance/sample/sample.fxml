@@ -62,14 +62,13 @@
                            <children>
                               <VBox prefHeight="21.0" prefWidth="177.0">
                                  <children>
-                                    <TextField fx:id="lblBetAmount" prefHeight="42.0" prefWidth="183.0" promptText="Place your bet here!" />
+                                    <TextField fx:id="lblBetAmount" disable="true" prefHeight="42.0" prefWidth="183.0" promptText="Place your bet here!" />
                                  </children>
                               </VBox>
                               <HBox alignment="TOP_CENTER" prefHeight="13.0" prefWidth="137.0" spacing="5.0">
                                  <children>
                                     <Button fx:id="btnHigher" disable="true" mnemonicParsing="false" onAction="#higher" text="Higher" />
                                     <Button fx:id="btnLower" disable="true" mnemonicParsing="false" onAction="#lower" text="Lower" />
-                                    <Button fx:id="btnSame" disable="true" mnemonicParsing="false" onAction="#same" text="Same" />
                                  </children>
                               </HBox>
                            </children>
