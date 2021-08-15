@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="144.0" prefWidth="600.0">
+         <children>
+            <Label text="Welcome to" />
+            <Label prefHeight="57.0" prefWidth="413.0" text="The Game of Chance">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label text="By: Jesse Szeto" />
+            <Label prefHeight="17.0" prefWidth="454.0" text="Instructions: To start, roll the dice. Next, enter a betting amount in the box provided." />
+            <Label text=" Then select your guess for whether the next number will be higher or lower. " />
+            <Label text="If you guessed correctly, the points you entered will be added to your total points." />
+            <Label text="If you guessed incorrectly, the points you entered will be deducted from your total points. " />
+            <Label text="Roll the dice again to start the next round!" />
+            <Label text="Your final score will be your total points when you decide to end the game. " />
+         </children>
+      </VBox>
+      <Label fx:id="lblTotalPoints" alignment="CENTER" prefHeight="21.0" prefWidth="489.0" text="Total Points: 0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" prefHeight="61.0" prefWidth="600.0" spacing="5.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="108.0" prefWidth="600.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btnRollDice" mnemonicParsing="false" onAction="#rollDice" text="Roll Dice" />
+                        <Label text="Dice: " />
+                        <Label fx:id="lblRollNum" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="76.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="205.0" spacing="20.0">
+                           <children>
+                              <Label text="Betting Amount: ">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="19.0" prefWidth="201.0" text="Your guess for the next number: ">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="70.0" prefWidth="178.0" spacing="10.0">
+                           <children>
+                              <VBox prefHeight="21.0" prefWidth="177.0">
+                                 <children>
+                                    <TextField fx:id="lblBetAmount" prefHeight="42.0" prefWidth="183.0" promptText="Place your bet here!" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="13.0" prefWidth="137.0" spacing="5.0">
+                                 <children>
+                                    <Button fx:id="btnHigher" disable="true" mnemonicParsing="false" onAction="#higher" text="Higher" />
+                                    <Button fx:id="btnLower" disable="true" mnemonicParsing="false" onAction="#lower" text="Lower" />
+                                    <Button fx:id="btnSame" disable="true" mnemonicParsing="false" onAction="#same" text="Same" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnEnd" mnemonicParsing="false" onAction="#endGame" text="End Game" />
+      <Label fx:id="lblFinalScore" alignment="CENTER" prefHeight="17.0" prefWidth="484.0" text="Final Score: " />
+   </children>
+</VBox>
