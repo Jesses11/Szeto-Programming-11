@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" prefHeight="430.0" prefWidth="600.0" text="Display Friends">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="26.0" prefHeight="348.0" prefWidth="241.0">
+                           <children>
+                              <Label text="List of Friends:">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <ListView fx:id="friendList" onMouseClicked="#displayFriendInfo" prefHeight="318.0" prefWidth="241.0" />
+                           </children>
+                        </VBox>
+                        <Button fx:id="btnRemoveFriend" disable="true" layoutX="388.0" layoutY="293.0" mnemonicParsing="false" onAction="#removeFriend" text="Delete Friend" textFill="#ff0202" />
+                        <Label layoutX="335.0" layoutY="14.0" text="Friend Information:">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="308.0" layoutY="44.0" prefHeight="249.0" prefWidth="246.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="246.0">
+                                 <children>
+                                    <Label text="Name: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblName" text="                                                ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="246.0">
+                                 <children>
+                                    <Label>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Email: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblEmail" text="                                                ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="246.0">
+                                 <children>
+                                    <Label>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Address: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblAddress" text="                                           ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="246.0">
+                                 <children>
+                                    <Label text="Age: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblAge" text="                                                ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="246.0">
+                                 <children>
+                                    <Label text="Phone Number: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblPhoneNumber" text="                                ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="577.0" prefWidth="600.0" text="Add Friend">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="321.0" prefWidth="569.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="569.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="122.0" text="Add Friend">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="216.0" prefWidth="569.0">
+                                 <children>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="246.0" prefWidth="204.0" spacing="10.0">
+                                       <children>
+                                          <Label text="First Name:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Last Name:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Email:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Address:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Age:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Phone Number:  ">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="246.0" prefWidth="300.0" spacing="15.0">
+                                       <children>
+                                          <TextField fx:id="getFirstName" promptText="enter first name here" />
+                                          <TextField fx:id="getLastName" promptText="enter last name here" />
+                                          <TextField fx:id="getEmail" promptText="enter email here" />
+                                          <TextField fx:id="getAddress" promptText="enter address here" />
+                                          <TextField fx:id="getAge" promptText="enter age here" />
+                                          <TextField fx:id="getPhoneNumber" promptText="enter phone number here" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Button fx:id="createFriend" mnemonicParsing="false" onAction="#addFriend" prefHeight="34.0" prefWidth="117.0" text="Add Friend">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</VBox>
