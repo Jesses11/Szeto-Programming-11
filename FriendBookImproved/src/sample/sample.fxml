@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="990.0" spacing="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <TabPane prefHeight="674.0" prefWidth="252.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Instructions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="7.0" layoutY="43.0" prefHeight="626.0" prefWidth="234.0">
+                           <children>
+                              <Label text="Instructions:">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label text="To start, either add a new">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="group by entering a ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="70.0" layoutY="526.0" text="group name and clicking">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="70.0" layoutY="543.0" text="the &quot;Add Group&quot; Button">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="or load groups by ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="clicking the &quot;Load Groups&quot; ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="button. Then you can either">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="add Friends to a group">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="by going to the Add Friends">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="265.0" text="Tab, selecting it in the list">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="view, entering their info,">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="and then clicking the">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="&quot;Add Friend to Selected">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Group&quot; buton or you can">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="click the &quot;Load Friends&quot;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="612.0" text="button to see friends you">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="629.0" text="previously added to a ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="646.0" text="selected group.">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Friends">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                          <VBox alignment="TOP_CENTER" layoutX="13.0" layoutY="58.0" prefHeight="403.0" prefWidth="239.0" spacing="5.0">
+                              <children>
+                                  <Label text="Add A Friend">
+                                      <font>
+                                          <Font size="26.0" />
+                                      </font>
+                                  </Label>
+                                  <HBox alignment="CENTER" prefHeight="229.0" prefWidth="220.0">
+                                      <children>
+                                          <VBox alignment="CENTER" prefHeight="229.0" prefWidth="56.0" spacing="30.0">
+                                              <children>
+                                                  <Label text="Name: ">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                                  <Label text="Email: ">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                                  <Label text="Phone: ">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                              </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="229.0" prefWidth="163.0" spacing="25.0">
+                                              <children>
+                                                  <TextField fx:id="getFriendName" disable="true" promptText="Enter Name Here">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </TextField>
+                                                  <TextField fx:id="getEmail" disable="true" promptText="Enter Email Here">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </TextField>
+                                                  <TextField fx:id="getPhone" disable="true" promptText="Enter Phone Here">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </TextField>
+                                              </children>
+                                          </VBox>
+                                      </children>
+                                  </HBox>
+                                  <Button fx:id="btnAddFriend" disable="true" onAction="#addFriend" text="Add Friend to Selected Group">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              </children>
+                          </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+        <VBox alignment="TOP_CENTER" prefHeight="674.0" prefWidth="288.0" spacing="5.0">
+            <children>
+                <Label text="Add Groups">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="27.0" prefWidth="205.0">
+                    <children>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="82.0">
+                            <children>
+                                <Label text="Group Name: " />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="27.0" prefWidth="123.0">
+                            <children>
+                                <TextField fx:id="getGroupName" prefHeight="25.0" prefWidth="131.0" promptText="Enter Group Name" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Button fx:id="btnAddGroup" mnemonicParsing="false" onAction="#addGroup" text="Add Group" />
+                <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="215.0" spacing="5.0">
+                    <children>
+                        <Label text="Selected Group:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                        <Label fx:id="selectedGroup" text="Group Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </HBox>
+                <ListView fx:id="groupList" onMouseClicked="#selectGroup" prefHeight="453.0" prefWidth="195.0" />
+                <Button fx:id="btnLoadGroups" mnemonicParsing="false" onAction="#loadGroups" text="Load Groups">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="674.0" prefWidth="430.0" spacing="5.0">
+            <children>
+                <Label text="List of Friends in Group">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="friendsList" prefHeight="516.0" prefWidth="419.0" />
+                <Button fx:id="btnLoadFriends" disable="true" mnemonicParsing="false" onAction="#loadFriends" text="Load Friends">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+    </children>
+</HBox>
